@@ -1,0 +1,43 @@
+<Window x:Class="GelesiyeWPF.Views.Dialogs.AppDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gelesiye" SizeToContent="Height" Width="430" MinHeight="170"
+        Icon="pack://application:,,,/Assets/gelesiye.ico"
+        WindowStartupLocation="CenterOwner" WindowStyle="None"
+        ResizeMode="NoResize" ShowInTaskbar="False"
+        Background="White" BorderThickness="1" BorderBrush="#CBD5E1"
+        KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border x:Name="bdHeader" Grid.Row="0" Background="#2563EB" MouseLeftButtonDown="Header_MouseDown">
+            <TextBlock x:Name="lblBaslik" Foreground="White" FontFamily="Segoe UI" FontSize="14"
+                       FontWeight="SemiBold" VerticalAlignment="Center" Margin="16,0"/>
+        </Border>
+
+        <Grid Grid.Row="1" Margin="20,18,20,12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="44"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="lblIkon" FontSize="28" VerticalAlignment="Top" Margin="0,0,0,0"/>
+            <StackPanel Grid.Column="1">
+                <TextBlock x:Name="lblMesaj" FontFamily="Segoe UI" FontSize="13" FontWeight="SemiBold"
+                           Foreground="#0F172A" TextWrapping="Wrap"/>
+                <TextBlock x:Name="lblDetay" FontFamily="Segoe UI" FontSize="12" Foreground="#64748B"
+                           TextWrapping="Wrap" Margin="0,6,0,0" Visibility="Collapsed"/>
+            </StackPanel>
+        </Grid>
+
+        <Border Grid.Row="2" Background="#F8FAFC" BorderBrush="#E2E8F0" BorderThickness="0,1,0,0" Padding="16,10">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="btnIptal" Style="{StaticResource DlgBtn}" Content="Hayır" Click="BtnIptal_Click" IsCancel="True" Margin="0,0,8,0"/>
+                <Button x:Name="btnTamam" Style="{StaticResource DlgPrimaryBtn}" Content="Tamam" Click="BtnTamam_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

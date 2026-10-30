@@ -1,0 +1,101 @@
+<Window x:Class="GelesiyeWPF.Views.Dialogs.CariEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:conv="clr-namespace:GelesiyeWPF.Converters"
+        Title="{conv:Loc Title_CariKarti}" Width="640" Height="620" MinWidth="560" MinHeight="520"
+        Icon="pack://application:,,,/Assets/gelesiye.ico"
+        WindowStartupLocation="CenterOwner" WindowStyle="None" ResizeMode="CanResize"
+        ShowInTaskbar="False"
+        Background="#F1F5F9" BorderBrush="#CBD5E1" BorderThickness="1"
+        KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="#107FD2" MouseLeftButtonDown="Header_MouseDown">
+            <TextBlock x:Name="lblBaslik" Foreground="White" FontFamily="Segoe UI" FontSize="15"
+                       FontWeight="SemiBold" VerticalAlignment="Center" Margin="18,0"/>
+        </Border>
+
+        <TabControl Grid.Row="1" Margin="14,12,14,6" Background="White" BorderBrush="#E2E8F0">
+            <TabItem Header="{conv:Loc Tab_CariBilgileri}">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Margin="16,6,16,12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="16"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="{conv:Loc Lbl_CariKodu}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtCariKodu" Style="{StaticResource DlgInput}"/>
+                            <TextBlock Text="{conv:Loc Lbl_CariUnvan}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtUnvan" Style="{StaticResource DlgInput}"/>
+                            <TextBlock Text="{conv:Loc Lbl_Yetkili}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtYetkili" Style="{StaticResource DlgInput}"/>
+                            <TextBlock Text="{conv:Loc Lbl_Gsm}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtGsm" Style="{StaticResource DlgInput}"/>
+                            <TextBlock Text="{conv:Loc Lbl_Telefon}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtTelefon" Style="{StaticResource DlgInput}"/>
+                            <TextBlock Text="{conv:Loc Lbl_Faks}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtFaks" Style="{StaticResource DlgInput}"/>
+                            <TextBlock Text="{conv:Loc Lbl_Eposta}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtEposta" Style="{StaticResource DlgInput}"/>
+                            <TextBlock Text="{conv:Loc Lbl_Web}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtWeb" Style="{StaticResource DlgInput}"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="{conv:Loc Lbl_KayitTarihi}" Style="{StaticResource DlgLabel}"/>
+                            <DatePicker x:Name="dtpKayitTarihi" FontSize="13" Padding="4,5"/>
+                            <TextBlock Text="{conv:Loc Lbl_Il}" Style="{StaticResource DlgLabel}"/>
+                            <ComboBox x:Name="cmbIl" Style="{StaticResource DlgCombo}" IsEditable="True"
+                                      SelectionChanged="CmbIl_SelectionChanged"/>
+                            <TextBlock Text="{conv:Loc Lbl_Ilce}" Style="{StaticResource DlgLabel}"/>
+                            <ComboBox x:Name="cmbIlce" Style="{StaticResource DlgCombo}" IsEditable="True"/>
+                            <TextBlock Text="{conv:Loc Lbl_VergiDairesi}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtVergiDairesi" Style="{StaticResource DlgInput}"/>
+                            <TextBlock Text="{conv:Loc Lbl_VergiNo}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtVergiNo" Style="{StaticResource DlgInput}"/>
+                            <TextBlock Text="{conv:Loc Lbl_RiskLimiti}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtCariLimit" Style="{StaticResource DlgInput}" TextAlignment="Right"/>
+                            <TextBlock Text="{conv:Loc Lbl_HesapDurumu}" Style="{StaticResource DlgLabel}"/>
+                            <ComboBox x:Name="cmbHesapDurumu" Style="{StaticResource DlgCombo}">
+                                <ComboBoxItem Content="{conv:Loc Opt_Aktif}" IsSelected="True"/>
+                                <ComboBoxItem Content="{conv:Loc Opt_Pasif}"/>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="1" Grid.ColumnSpan="3">
+                            <TextBlock Text="{conv:Loc Lbl_Adres}" Style="{StaticResource DlgLabel}"/>
+                            <TextBox x:Name="edtAdres" Style="{StaticResource DlgInput}"
+                                     AcceptsReturn="True" TextWrapping="Wrap" Height="56"
+                                     VerticalContentAlignment="Top" VerticalScrollBarVisibility="Auto"/>
+                        </StackPanel>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+
+            <TabItem Header="{conv:Loc Tab_OzelNotlar}">
+                <TextBox x:Name="mmoNotlar" Margin="12" Style="{StaticResource DlgInput}"
+                         AcceptsReturn="True" TextWrapping="Wrap" VerticalContentAlignment="Top"
+                         VerticalScrollBarVisibility="Auto"/>
+            </TabItem>
+        </TabControl>
+
+        <Border Grid.Row="2" Background="White" BorderBrush="#E2E8F0" BorderThickness="0,1,0,0" Padding="16,10">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Style="{StaticResource DlgBtn}" Content="{conv:Loc Btn_IptalEsc}" Click="BtnIptal_Click" IsCancel="True"/>
+                <Button Style="{StaticResource DlgPrimaryBtn}" Content="{conv:Loc Btn_KaydetF2}" Click="BtnKaydet_Click" IsDefault="False"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

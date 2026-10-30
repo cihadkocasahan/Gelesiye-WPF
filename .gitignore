@@ -1,0 +1,28 @@
+## Visual Studio & .NET Build Artifacts
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+.vs/
+
+## Database & Runtime Data
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+logs/
+backups/
+
+## Exclude generated build artifacts
+releases/*Beta*.exe
+!releases/Gelesiye_WPF_Setup_x64.exe
+!releases/Gelesiye_WPF_Setup_Debug_x64.exe
+
+## AI Agent & Workspace Local Configurations
+AGENTS.md
+.agents/
+.kiro/
+scratch/
