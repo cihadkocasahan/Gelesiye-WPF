@@ -4,7 +4,20 @@
 
 En güncel **.NET 10** platformunda, modern **C#**, **WPF (Windows Presentation Foundation)** ve **MVVM (CommunityToolkit.Mvvm)** tasarım mimarisiyle sıfırdan geliştirilmiştir.
 
+> [!IMPORTANT]
+> **Örnek & Eğitim Amaçlı Proje:** Bu yazılım ve kaynak kodları; yazılım mimarisi desenlerini (MVVM, Repository, Clean Architecture), modern kodlama pratiklerini ve masaüstü yazılım geliştirme yaklaşımlarını göstermek amacıyla **eğitim ve örnek referans projesi** olarak hazırlanmıştır.
+> 
+> **Sorumluluk Reddi (Disclaimer):** Yazılım herhangi bir açık veya zımni garanti verilmeksizin **"olduğu gibi" (AS-IS)** sunulmaktadır. Geliştirici; verilerin kaybı, ticari/finansal hesaplama uyuşmazlıkları, kar kaybı veya bu yazılımın kullanımından doğabilecek doğrudan veya dolaylı hiçbir zarardan sorumlu tutulamaz. Ticari veya kritik iş süreçlerinizde kullanım kararı ve veri yedekleme sorumluluğu tamamen kullanıcıya aittir.
+
+> 🔄 **İki Farklı Teknoloji Yığını, Birebir Aynı İş Mantığı:**  
+> Gelesiye; aynı veritabanı şemasını, aynı domain kurallarını ve aynı kullanıcı deneyimini paylaşan iki kardeş açık kaynak sürüme sahiptir:
+> - 🔶 **[WPF Edition (Bu Repo)](https://github.com/cihadkocasahan/Gelesiye-WPF):** Modern .NET 10, C#, XAML ve CommunityToolkit.Mvvm mimarisi.
+> - 🔷 **[Delphi Edition](https://github.com/cihadkocasahan/Gelesiye-Delphi):** Embarcadero Delphi 12, Win64, saf VCL ve OOP mimarisi.  
+> 
+> Her iki proje birlikte incelendiğinde; aynı masaüstü finans probleminin iki farklı modern stack'te ve yapay zeka destekli geliştirme disipliniyle nasıl inşa edildiğini karşılaştırmalı olarak gösterir.
+
 ---
+
 
 ## 🚀 Hemen İndir ve Kur
 
@@ -93,6 +106,16 @@ scripts\build_setup.bat
 
 ---
 
-## 📄 Lisans
+## 📄 Lisans ve Sorumluluk Reddi
 
-Bu proje kişisel, eğitim ve şirket içi kullanım için ücretsizdir. Ticari amaçla satışı veya ücretli dağıtımı yapılamaz. Detaylar için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
+Bu proje kişisel, eğitim, portfolyo ve örnek referans amaçlı kullanım için ücretsizdir. Ticari amaçla satışı veya ücretli dağıtımı yapılamaz. Yazılım "olduğu gibi" (AS-IS) sunulmakta olup geliştirici hiçbir veri veya finansal zarardan sorumlu tutulamaz. Detaylar ve tam sorumluluk reddi beyanı için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
+
+---
+
+## 🎯 Proje Hakkında & Geliştirme Notu
+
+Bu proje; modern .NET 10 & C# ekosistemini, WPF mimarisini (MVVM, Data Binding, XAML) ve yapay zeka destekli çoklu teknoloji geliştirme yetkinliklerini somut bir örnek üzerinde sergilemek üzere **portfolyo ve referans projesi** olarak geliştirilmiştir.
+
+Geliştirme sürecinde modern yazılım pratikleri ile yapay zeka destekli geliştirme araçları etkin bir şekilde harmanlanarak; temiz mimari, ölçeklenebilir yapı ve kullanıcı deneyimi ön planda tutulmuştur.
+
+Diğer çalışmalar ve detaylı teknik profil için: [cihadkocasahan](https://github.com/cihadkocasahan)

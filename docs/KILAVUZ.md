@@ -15,7 +15,8 @@
 6. [Yazdırma, Ekstre ve Raporlama Sistemi](#6-yazdırma-ekstre-ve-raporlama-sistemi)
 7. [Veri Güvenliği, Otomatik Yedekleme ve Devir](#7-veri-güvenliği-otomatik-yedekleme-ve-devir)
 8. [Program ve Firma Ayarları](#8-program-ve-firma-ayarları)
-9. [Klavye Kısayolları Referans Tablosu](#9-klavye-kısayolları-referans-tablosu)
+9. [Hakkında ve Lisans Bilgileri](#9-hakkında-ve-lisans-bilgileri)
+10. [Klavye Kısayolları Referans Tablosu](#10-klavye-kısayolları-referans-tablosu)
 
 ---
 
@@ -68,7 +69,7 @@ Arama çubuğu üzerinden binlerce cari arasında milisaniyeler içinde arama ya
 
 Yeni müşteri tanımlamak için <kbd>F3</kbd> tuşuna basabilir veya alt çubuktaki `➕` butonuna tıklayabilirsiniz.
 
-![Cari Kartı](screenshots/03_cari_karti.png)
+![Cari Kartı](screenshots/03_cari_detay.png)
 
 - **Otomatik Cari Kodu:** Sistem bir sonraki boş cari kodunu otomatik önerir (`C0001`, `C0002` vb.).
 - **Zengin İletişim Bilgileri:** Yetkili, Telefon, GSM, Faks, E-posta, Web adresi.
@@ -100,7 +101,13 @@ Fareye ihtiyaç duymadan klavye üzerinden anında fiş kesebilirsiniz:
 | <kbd>Alt + ←</kbd> / <kbd>Alt + →</kbd> | **Cari Geçişi** | Listeye dönmeden önceki veya sonraki müşterinin ekstresine hızlı geçiş | Ekran güncellenir |
 | <kbd>Esc</kbd> | **Geri Dön** | Hareket sayfasından ana Cari Listesine tek tuşla dönüş | Listeye döner |
 
-![Fiş Girişi](screenshots/04_dekont_girisi.png)
+![Borç Dekontu](screenshots/04_dekont_borc_girisi.png)
+
+![Tahsilat ve Alacak Girişi](screenshots/04_dekont_girisi.png)
+
+### Hızlı İşlem Menüsü & Kısayol Araçları
+
+![Hızlı Menü ve Araçlar](screenshots/05_hizli_menu_araclar.png)
 
 ### Klavye Ergonomisi (Hızlı İşlem)
 Fiş kaydedildikten sonra çıkan *"Makbuz yazdırılsın mı?"* onay kutusunda varsayılan seçim **Hayır** butonudur:
@@ -113,7 +120,7 @@ Fiş kaydedildikten sonra çıkan *"Makbuz yazdırılsın mı?"* onay kutusunda 
 
 Gelesiye, Windows yazdırma altyapısıyla tam entegre modern bir **Baskı Önizleme Penceresi** sunar.
 
-![Rapor Önizleme](screenshots/05_rapor_onizleme.png)
+![Rapor ve Baskı Önizleme](screenshots/06_rapor_ve_baski.png)
 
 ### Rapor Seçenekleri
 - **📑 Ayrıntılı Cari Hesap Ekstresi:** İki tarih arası veya dönemsel olarak müşterinin tüm borç, alacak ve yürüyen bakiye dökümü.
@@ -155,7 +162,15 @@ Ayarlar ekranından (<kbd>⚙</kbd>) işletmenize özel yapılandırmaları öze
 
 ---
 
-## 9. Klavye Kısayolları Referans Tablosu
+## 9. Hakkında ve Lisans Bilgileri
+
+![Hakkında](screenshots/08_hakkinda.png)
+
+Gelesiye, şeffaf ve güvenilir mimariyle geliştirilmiş olup Hakkında penceresinden sürüm ve lisans detaylarını inceleyebilirsiniz.
+
+---
+
+## 10. Klavye Kısayolları Referans Tablosu
 
 | Tuş | Konum | İşlem |
 |:---:|:---|:---|

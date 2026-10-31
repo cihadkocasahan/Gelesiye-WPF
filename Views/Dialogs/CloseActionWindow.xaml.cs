@@ -23,7 +23,9 @@ public partial class CloseActionWindow : Window
     public static (CloseActionResult action, bool remember) Prompt(Window? owner = null)
     {
         var win = new CloseActionWindow();
-        if (owner != null) win.Owner = owner;
+        // Owner yalnızca gösterilmiş (IsLoaded && IsVisible) pencereye atanabilir
+        if (owner != null && owner.IsLoaded && owner.IsVisible)
+            win.Owner = owner;
         win.ShowDialog();
         return (win.Result, win.Remember);
     }
